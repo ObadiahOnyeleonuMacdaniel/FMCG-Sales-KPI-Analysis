@@ -39,11 +39,8 @@ These files were used to get all the insights regarding the performance of the t
   (d) Sales metrics
        
 - Step 6 : Merge all KPIs into a Summary-KPI-Table
-- Step 7 : Visualizing the KPI achievements. A card visual was used to represent count of customers.
+- Step 7 : Visualizing the KPI achievements. A boxplot was used
 
-  (a) Seat comfort
-  
-  (b) Departure & arrival time convenience
 
 
 ## MANDATORY KPIs 
@@ -70,8 +67,8 @@ These files were used to get all the insights regarding the performance of the t
 - Checking the unique number of features in the sales_feb dataframe
 
 
-- Calculating for the Mandatory KPIs
-   (a) Active Days
+- ## Calculating for the Mandatory KPIs
+  ### (a) Active Days
   - Target Work Days: Number of days sales reps are expected to work in a month, where a working week is Monday – Saturday
   - Work Days: Actual number of work days worked (Visible in the activities report).
   
@@ -79,7 +76,7 @@ These files were used to get all the insights regarding the performance of the t
            Top-10 Sales_rep with the highest Active days
   ![activedayszz](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/2e26ffb4-f20a-4d04-9802-b0cf31cc7cb1)      
 
-  (b) Retailer Universe, Coverage & Effective Coverage.
+ ### (b) Retailer Universe, Coverage & Effective Coverage.
 
    KPIs to show the relationship between the unique number of retailers each sales rep is expected to have, cover and sell into.
 - Retailer Count Target
@@ -98,7 +95,7 @@ These files were used to get all the insights regarding the performance of the t
 
 
   
-  (c) Calls and Productive Calls
+ ### (c) Calls and Productive Calls
   KPIs to show the number of expected retailer visits (calls), actual visits and productive visits.
 Calls Target: Target number of unique retailers to be visited on each work day by each sales rep multiplied by the target work days in a month for each sales rep.
 Calls Actual: Total number of unique retailers visited on each work day in a month for each sales rep (Visible in the activities report for each sales rep).
@@ -111,10 +108,10 @@ Productive Calls: Total number of unique retailers sold to on each work day in a
 Productive Calls % (Against Calls Target)
 Productive Calls % (Against Calls Target)
            Top-10 Sales_rep with the highest Productive Calls
-  ![bb](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/d3f7c12b-2827-40c8-a9e2-d9ac9d1744ff)
+  ![spc](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/7b422359-9f00-448c-be06-8ffb1ef3369b)
 
 
-  (d) Sales metrics
+ ### (d) Sales metrics
 Sales Target (Value)
 Sales Actual (Value)
 Sales Target (Volume in Cartons)
