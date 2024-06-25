@@ -86,7 +86,7 @@ These files were used to get all the insights regarding the performance of the t
 
           
            Top-10 Sales_rep with the highest retailer_universe
-  ![activedayszz](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/2e26ffb4-f20a-4d04-9802-b0cf31cc7cb1)      
+  ![retatt](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/58b22adc-0653-46c2-88ba-66f16ee054d1)      
 
 - Retailer Count
 - Retailer Universe %
@@ -103,6 +103,10 @@ These files were used to get all the insights regarding the performance of the t
 Calls Target: Target number of unique retailers to be visited on each work day by each sales rep multiplied by the target work days in a month for each sales rep.
 Calls Actual: Total number of unique retailers visited on each work day in a month for each sales rep (Visible in the activities report for each sales rep).
 Calls %
+
+           Top-10 Sales_rep with the highest total calls
+  ![retatt](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/58b22adc-0653-46c2-88ba-66f16ee054d1)
+  
 Productive Calls: Total number of unique retailers sold to on each work day in a month for each sales rep (Visible in the sales report for each sales rep).
 Productive Calls % (Against Calls Target)
 Productive Calls % (Against Calls Target)
