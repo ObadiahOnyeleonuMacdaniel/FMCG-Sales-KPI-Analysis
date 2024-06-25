@@ -1,13 +1,13 @@
 # FMCG-Sales-KPI-Analysis
 
-### This repository contains an in-depth analysis of the FMCG sales team’s performance for February 2023. The analysis includes key performance indicators (KPIs) that provide insights into the achievements and effectiveness of each sales representative.
+This repository contains an in-depth analysis of the FMCG (Fast Moving Cosumers Goods) sales team’s performance for February 2023. 
+
+The analysis includes key performance indicators (KPIs) that provide insights into the achievements and effectiveness of each sales representative.
 
 ## PROBLEM STATEMENT
-A table displaying the KPI achievements for all sales reps for February 2023, providing insights into the team's performance for the month.
+We seek to generate a table displaying the KPI achievements for all sales reps for February 2023, providing insights into the team's performance for the month.
 
 Four files in the Excel CSV format containing all required data about the FMCG Sales Team were given.
-
-These files were used to get all the insights regarding the performance of the team for the month of February 2023:
 
   (a) User Master;
 
@@ -17,15 +17,17 @@ These files were used to get all the insights regarding the performance of the t
   
   (d) Sales Report
 
+These files were used to get all the insights regarding the performance of the team for the month of February 2023:
+
 ### Steps followed 
 
 - Step 1 : Load and Read Dataset into Google colab (dataset is a csv file).
            
-           Since am using Python for my Data Analysis, google colab or jupyter notebook are my favorite by default, while analyzing my dataset.
+           Since am using Python for my Data Analysis, google colab or jupyter notebook are my favorite by default while analyzing my dataset.
   
 - Step 2 : Exploratory Data Analysis (EDA)
-- Step 3 : Ensure consistent naming through FEATURE ENGINEERING and DATA CLEANING.
-- Step 4 : Filter activities and sales data for February 2023
+- Step 3 : DATA CLEANING and also Ensuring consistent naming through FEATURE ENGINEERING.
+- Step 4 : Filter activities and sales data for February 2023 only.
 - Step 5 : Calculating for the Mandatory KPIs
 
   (a) Active Days
@@ -57,6 +59,52 @@ These files were used to get all the insights regarding the performance of the t
   (a) Seat comfort
   
   (b) Departure & arrival time convenience
+
+
+## MANDATORY KPIs 
+- Calculating for the Mandatory KPIs
+
+  (a) Active Days
+  - Target Work Days: Number of days sales reps are expected to work in a month, where a working week is Monday – Saturday
+  - Work Days: Actual number of work days worked (Visible in the activities report).
+
+
+  (b) Retailer Universe, Coverage & Effective Coverage.
+
+   KPIs to show the relationship between the unique number of retailers each sales rep is expected to have, cover and sell into.
+- Retailer Count Target
+- Retailer Count
+- Retailer Universe %
+- Covered Retailers: Unique count of retailers visited in the month by each sales rep (Visible in the activities report for each sales rep).
+- Coverage % (Against Retailer Count)
+- Productive Retailers: Unique count of retailers sold to in the month by each sales rep (Visible in the sales report for each sales rep).
+- Productive Coverage % (Against Retailer Count)
+- Productive Coverage % (Against Covered Retailers)
+
+
+  
+  (c) Calls and Productive Calls
+  KPIs to show the number of expected retailer visits (calls), actual visits and productive visits.
+Calls Target: Target number of unique retailers to be visited on each work day by each sales rep multiplied by the target work days in a month for each sales rep.
+Calls Actual: Total number of unique retailers visited on each work day in a month for each sales rep (Visible in the activities report for each sales rep).
+Calls %
+Productive Calls: Total number of unique retailers sold to on each work day in a month for each sales rep (Visible in the sales report for each sales rep).
+Productive Calls % (Against Calls Target)
+Productive Calls % (Against Calls Target)
+
+  (d) Sales metrics
+Sales Target (Value)
+Sales Actual (Value)
+Sales Target (Volume in Cartons)
+Sales Actual (Volume in Cartons)
+Sales Value %
+Sales Volume %
+
+
+## Data Analysis & Visualisation Requirements
+A table showing the KPI achievements for all sales rep for the month.
+A table showing the summary of all KPI achievements by ASM & ZSM for the month.
+A presentation telling a story about all KPI achievements by the BASIL team for the month of February as well as additional insights that can be drawn from the data.
 
 ![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
 
