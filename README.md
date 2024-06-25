@@ -76,14 +76,18 @@ These files were used to get all the insights regarding the performance of the t
   - Work Days: Actual number of work days worked (Visible in the activities report).
   
            
-           Sales_rep with the highest Active days
-           
-          
+           Top-10 Sales_rep with the highest Active days
+  ![activedayszz](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/2e26ffb4-f20a-4d04-9802-b0cf31cc7cb1)      
 
   (b) Retailer Universe, Coverage & Effective Coverage.
 
    KPIs to show the relationship between the unique number of retailers each sales rep is expected to have, cover and sell into.
 - Retailer Count Target
+
+          
+           Top-10 Sales_rep with the highest retailer_universe
+  ![activedayszz](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/2e26ffb4-f20a-4d04-9802-b0cf31cc7cb1)      
+
 - Retailer Count
 - Retailer Universe %
 - Covered Retailers: Unique count of retailers visited in the month by each sales rep (Visible in the activities report for each sales rep).
