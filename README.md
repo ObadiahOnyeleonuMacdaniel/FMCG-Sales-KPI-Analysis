@@ -102,7 +102,7 @@ These files were used to get all the insights regarding the performance of the t
 - Effective Coverage
   
               Top-10 Sales_rep with the highest Effective Coverage
-  ![activedayszz](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/2e26ffb4-f20a-4d04-9802-b0cf31cc7cb1)   
+  ![ecb](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/16f6384c-8340-4e4f-bba7-a4b308b16984)
 
 
   
