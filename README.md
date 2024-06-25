@@ -105,11 +105,14 @@ Calls Actual: Total number of unique retailers visited on each work day in a mon
 Calls %
 
            Top-10 Sales_rep with the highest total calls
-  ![retatt](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/58b22adc-0653-46c2-88ba-66f16ee054d1)
+  ![bb](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/d3f7c12b-2827-40c8-a9e2-d9ac9d1744ff)
   
 Productive Calls: Total number of unique retailers sold to on each work day in a month for each sales rep (Visible in the sales report for each sales rep).
 Productive Calls % (Against Calls Target)
 Productive Calls % (Against Calls Target)
+           Top-10 Sales_rep with the highest Productive Calls
+  ![bb](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/d3f7c12b-2827-40c8-a9e2-d9ac9d1744ff)
+
 
   (d) Sales metrics
 Sales Target (Value)
