@@ -24,7 +24,7 @@ These files were used to get all the insights regarding the performance of the t
 - Step 1 : Load and Read Dataset into Google colab (dataset is a csv file).
            
            Since am using Python for my Data Analysis, google colab or jupyter notebook are my favorite by default while analyzing my dataset.
-  
+               
 - Step 2 : Exploratory Data Analysis (EDA)
 - Step 3 : DATA CLEANING and also Ensuring consistent naming through FEATURE ENGINEERING.
 - Step 4 : Filter activities and sales data for February 2023 only.
@@ -37,22 +37,7 @@ These files were used to get all the insights regarding the performance of the t
   (c) Calls and Productive Calls
   
   (d) Sales metrics
-  
-
-## Calculating the percentages, the following expression were written;
        
-        Calculate percentages for the KPI Summary Parameters 
-        
-        
-                 kpi_summary['Coverage %'] = kpi_summary['Coverage'] / kpi_summary['Retailer Universe'] * 100
-                 kpi_summary['Effective Coverage %'] = kpi_summary['Effective Coverage'] / kpi_summary['Retailer Universe'] * 100
-                 kpi_summary['Productive Calls %'] = kpi_summary['Productive Calls'] / kpi_summary['Total Calls'] * 100
-                 kpi_summary['Sales Value %'] = kpi_summary['Sales Actual (Value)'] / kpi_summary['Sales Target Value'] * 100
-                 kpi_summary['Sales Volume %'] = kpi_summary['Sales Actual (Volume in Cartons)'] / kpi_summary['Sales Target Volume Cartons'] * 100
-            
-
-
-        
 - Step 6 : Merge all KPIs into a Summary-KPI-Table
 - Step 7 : Visualizing the KPI achievements. A card visual was used to represent count of customers.
 
@@ -62,12 +47,38 @@ These files were used to get all the insights regarding the performance of the t
 
 
 ## MANDATORY KPIs 
-- Calculating for the Mandatory KPIs
+- Loading the dataset    
+          
+               #Load and Read Dataset
+               user_master = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/EURO ATLANTIS ANALYSIS/User Master.csv')
+               retailer_master = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/EURO ATLANTIS ANALYSIS/Retailer Master.csv')
+               activities_report = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/EURO ATLANTIS ANALYSIS/Activities Report.csv', parse_dates=['Visit Date'])
+               sales_report = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/EURO ATLANTIS ANALYSIS/Sales Report.csv')
 
-  (a) Active Days
+
+- Filter activities and sales data for February 2023
+
+
+- Checking the unique number of features in the sales_feb dataframe
+
+- Get the number of unique values for each column
+
+- Checking the unique number of features in the sales_feb dataframe
+
+- Checking the unique number of features in the sales_feb dataframe
+
+- Checking the unique number of features in the sales_feb dataframe
+
+
+- Calculating for the Mandatory KPIs
+   (a) Active Days
   - Target Work Days: Number of days sales reps are expected to work in a month, where a working week is Monday – Saturday
   - Work Days: Actual number of work days worked (Visible in the activities report).
-
+  
+           
+           Sales_rep with the highest Active days
+           
+          
 
   (b) Retailer Universe, Coverage & Effective Coverage.
 
@@ -100,6 +111,18 @@ Sales Actual (Volume in Cartons)
 Sales Value %
 Sales Volume %
 
+
+### Calculating the percentages, the following expression were written;
+       
+        Calculate percentages for the KPI Summary Parameters 
+        
+        
+                 kpi_summary['Coverage %'] = kpi_summary['Coverage'] / kpi_summary['Retailer Universe'] * 100
+                 kpi_summary['Effective Coverage %'] = kpi_summary['Effective Coverage'] / kpi_summary['Retailer Universe'] * 100
+                 kpi_summary['Productive Calls %'] = kpi_summary['Productive Calls'] / kpi_summary['Total Calls'] * 100
+                 kpi_summary['Sales Value %'] = kpi_summary['Sales Actual (Value)'] / kpi_summary['Sales Target Value'] * 100
+                 kpi_summary['Sales Volume %'] = kpi_summary['Sales Actual (Volume in Cartons)'] / kpi_summary['Sales Target Volume Cartons'] * 100
+            
 
 ## Data Analysis & Visualisation Requirements
 A table showing the KPI achievements for all sales rep for the month.
