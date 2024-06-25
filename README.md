@@ -1,6 +1,6 @@
-# FMCG-Sales-KPI-Analysis
+# FMCG (Fast Moving Cosumers Goods) SALES KPI ANALYSIS
 
-This repository contains an in-depth analysis of the FMCG (Fast Moving Cosumers Goods) sales team’s performance for February 2023. 
+This repository contains an in-depth analysis of an FMCG (Fast Moving Cosumers Goods) sales team’s performance for February 2023. 
 
 The analysis includes key performance indicators (KPIs) that provide insights into the achievements and effectiveness of each sales representative.
 
@@ -116,7 +116,9 @@ Calls %
   ![bb](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/d3f7c12b-2827-40c8-a9e2-d9ac9d1744ff)
   
 Productive Calls: Total number of unique retailers sold to on each work day in a month for each sales rep (Visible in the sales report for each sales rep).
+
 Productive Calls % (Against Calls Target)
+
 Productive Calls % (Against Calls Target)
            Top-10 Sales_rep with the highest Productive Calls
   ![spc](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/7b422359-9f00-448c-be06-8ffb1ef3369b)
@@ -124,10 +126,15 @@ Productive Calls % (Against Calls Target)
 
  ### (d) Sales metrics
 Sales Target (Value)
+
 Sales Actual (Value)
+
 Sales Target (Volume in Cartons)
+
 Sales Actual (Volume in Cartons)
+
 Sales Value %
+
 Sales Volume %
 
 
@@ -143,12 +150,14 @@ Sales Volume %
                  kpi_summary['Sales Volume %'] = kpi_summary['Sales Actual (Volume in Cartons)'] / kpi_summary['Sales Target Volume Cartons'] * 100
             
 
-## Data Analysis & Visualisation Requirements
+## DATA ANALYSIS & VISUALIZATION REQUIREMENTS
 A table showing the KPI achievements for all sales rep for the month.
-A table showing the summary of all KPI achievements by ASM & ZSM for the month.
-A presentation telling a story about all KPI achievements by the BASIL team for the month of February as well as additional insights that can be drawn from the data.
 
-![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
+A table showing the summary of all KPI achievements by ASM & ZSM for the month.
+
+A presentation telling a story about all KPI achievements by the team for the month of February as well as additional insights that can be drawn from the data.
+
+![spx](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/075d70e0-da2c-4725-a140-3b69fcdaf112)
 
         
         Count of Customers = COUNT(airline_passenger_satisfaction[ID])
