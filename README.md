@@ -2,136 +2,71 @@
 
 ### This repository contains an in-depth analysis of the FMCG sales team’s performance for February 2023. The analysis includes key performance indicators (KPIs) that provide insights into the achievements and effectiveness of each sales representative.
 
-## Problem Statement
+## PROBLEM STATEMENT
 A table displaying the KPI achievements for all sales reps for February 2023, providing insights into the team's performance for the month.
 
-Four files in the Excel CSV format containing all required data about the FMCG Sales Team were given. 
+Four files in the Excel CSV format containing all required data about the FMCG Sales Team were given.
+
 These files were used to get all the insights regarding the performance of the team for the month of February 2023:
 
--User Master;
--Retailer Master;
--Activities Report;
-and -Sales Report
+  (a) User Master;
+
+  (b) Retailer Master;
+  
+  (c) Activities Report;
+  
+  (d) Sales Report
 
 ### Steps followed 
 
-- Step 1 : Load and Read Dataset into Google colab, dataset is a csv file.
-- Step 2 : Ensure consistent naming.
-- Step 3 : Filter activities and sales data for February 2023
-- Step 4 : Calculating for the Mandatory KPIs (Active Days.
-- Step 5 : For calculating average delay time, null values were not taken into account as only less than 1% values are null in this column(i.e column named "Arrival Delay") 
-- Step 6 : In the report view, under the view tab, theme was selected.
-- Step 7 : Since the data contains various ratings, thus in order to represent ratings, a new visual was added using the three ellipses in the visualizations pane in report view. 
-- Step 8 : Visual filters (Slicers) were added for four fields named "Class", "Customer Type", "Gate Location" & "Type of travel".
-- Step 9 : Two card visuals were added to the canvas, one representing average departure delay in minutes & other representing average arrival delay in minutes.
-           Using visual level filter from the filters pane, basic filtering was used & null values were unselected for consideration into average calculation.
+- Step 1 : Load and Read Dataset into Google colab (dataset is a csv file).
            
-           Although, by default, while calculating average, blank values are ignored.
-- Step 10 : A bar chart was also added to the report design area representing the number of satisfied & neutral/unsatisfied customers. While creating this visual, field named "Gender" was also added to the Legends bucket, thus number of customers are also seggregated according the gender. 
-- Step 11 : Ratings Visual was used to represent different ratings mentioned below,
+           Since am using Python for my Data Analysis, google colab or jupyter notebook are my favorite by default, while analyzing my dataset.
+  
+- Step 2 : Exploratory Data Analysis (EDA)
+- Step 3 : Ensure consistent naming through FEATURE ENGINEERING and DATA CLEANING.
+- Step 4 : Filter activities and sales data for February 2023
+- Step 5 : Calculating for the Mandatory KPIs
 
-  (a) Baggage Handling
+  (a) Active Days
 
-  (b) Check-in Services
+  (b) Retailer Universe, Coverage & Effective Coverage
   
-  (c) Cleanliness
+  (c) Calls and Productive Calls
   
-  (d) Ease of online booking
+  (d) Sales metrics
   
-  (e) Food & Drink
-  
-  (f) In-flight Entertainment
 
-  (g) In-flight Service
-  
-  (h) In-flight wifi service
-  
-  (i) Leg Room service
-  
-  (j) On-board service
-  
-  (k) Online boarding
-  
-  (l) Seat comfort
-  
-  (m) Departure & arrival time convenience
-  
-In our dataset, Some parameters were assigned value 0, representing those parameters are not applicable for some customers.
-
-All these values have been ignored while calculating average rating for each of the parameters mentioned above.
-
-- Step 12 : In the report view, under the insert tab, two text boxes were added to the canvas, in one of them name of the airlines was mentioned & in the other one company's tagline was written.
-- Step 13 : In the report view, under the insert tab, using shapes option from elements group a rectangle was inserted & similarly using image option company's logo was added to the report design area. 
-- Step 14 : Calculated column was created in which, customers were grouped into various age groups.
-
-for creating new column following DAX expression was written;
+## Calculating the percentages, the following expression were written;
        
-        Age Group = 
+        Calculate percentages for the KPI Summary Parameters 
         
-        if(airline_passenger_satisfaction[Age]<=25, "0-25 (25 included)",
         
-        if(airline_passenger_satisfaction[Age]<=50, "25-50 (50 included)",
+                 kpi_summary['Coverage %'] = kpi_summary['Coverage'] / kpi_summary['Retailer Universe'] * 100
+                 kpi_summary['Effective Coverage %'] = kpi_summary['Effective Coverage'] / kpi_summary['Retailer Universe'] * 100
+                 kpi_summary['Productive Calls %'] = kpi_summary['Productive Calls'] / kpi_summary['Total Calls'] * 100
+                 kpi_summary['Sales Value %'] = kpi_summary['Sales Actual (Value)'] / kpi_summary['Sales Target Value'] * 100
+                 kpi_summary['Sales Volume %'] = kpi_summary['Sales Actual (Volume in Cartons)'] / kpi_summary['Sales Target Volume Cartons'] * 100
+            
+
+
         
-        if(airline_passenger_satisfaction[Age]<=75, "50-75 (75 included)",
-        
-        "75-100 (100 included)")))
-        
-Snap of new calculated column ,
+- Step 6 : Merge all KPIs into a Summary-KPI-Table
+- Step 7 : Visualizing the KPI achievements. A card visual was used to represent count of customers.
+
+  (a) Seat comfort
+  
+  (b) Departure & arrival time convenience
 
 ![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
 
         
-- Step 15 : New measure was created to find total count of customers.
-
-Following DAX expression was written for the same,
-        
         Count of Customers = COUNT(airline_passenger_satisfaction[ID])
         
-A card visual was used to represent count of customers.
 
-![Snap_Count](https://user-images.githubusercontent.com/102996550/174090154-424dc1a4-3ff7-41f8-9617-17a2fb205825.jpg)
 
-        
- - Step 16 : New measure was created to find  % of customers,
- 
- Following DAX expression was written to find % of customers,
- 
-         % Customers = (DIVIDE(airline_passenger_satisfaction[Count of Customers], 129880)*100)
- 
- A card visual was used to represent this perecntage.
- 
- Snap of % of customers who preferred business class
- 
- ![Snap_Percentage](https://user-images.githubusercontent.com/102996550/174090653-da02feb4-4775-4a95-affb-a211ca985d07.jpg)
 
- 
- - Step 17 : New measure was created to calculate total distance travelled by flights & a card visual was used to represent total distance.
- 
- Following DAX expression was written to find total distance,
- 
-         Total Distance Travelled = SUM(airline_passenger_satisfaction[Flight Distance])
-    
- A card visual was used to represent this total distance.
- 
- 
- ![Snap_3](https://user-images.githubusercontent.com/102996550/174091618-bf770d6c-34c6-44d4-9f5e-49583a6d5f68.jpg)
- 
- - Step 18 : The report was then published to Power BI Service.
- 
- 
-![Publish_Message](https://user-images.githubusercontent.com/102996550/174094520-3a845196-97e6-4d44-8760-34a64abc3e77.jpg)
-
-# Snapshot of Dashboard (Power BI Service)
-
-![dashboard_snapo](https://user-images.githubusercontent.com/102996550/174096257-11f1aae5-203d-44fc-bfca-25d37faf3237.jpg)
-
- 
- # Report Snapshot (Power BI DESKTOP)
-
- 
-![Dashboard_upload](https://user-images.githubusercontent.com/102996550/174074051-4f08287a-0568-4fdf-8ac9-6762e0d8fa94.jpg)
-
-# Insights
+## INSIGHTS
 
 A single page report was created on Power BI Desktop & it was then published to Power BI Service.
 
@@ -176,7 +111,7 @@ Following inferences can be drawn from the dashboard;
       b) Average delay in departure(minutes) - 14.71
 Average delay will change if different visual filters will be applied.
 
- ### [4] Some other insights
+ ## [4] SOME OTHER INSIGHTS
  
  ### Class
  
