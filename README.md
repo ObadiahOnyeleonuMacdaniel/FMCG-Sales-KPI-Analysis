@@ -99,6 +99,10 @@ These files were used to get all the insights regarding the performance of the t
 - Productive Retailers: Unique count of retailers sold to in the month by each sales rep (Visible in the sales report for each sales rep).
 - Productive Coverage % (Against Retailer Count)
 - Productive Coverage % (Against Covered Retailers)
+- Effective Coverage
+  
+              Top-10 Sales_rep with the highest Effective Coverage
+  ![activedayszz](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/2e26ffb4-f20a-4d04-9802-b0cf31cc7cb1)   
 
 
   
