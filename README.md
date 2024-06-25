@@ -92,6 +92,9 @@ These files were used to get all the insights regarding the performance of the t
 - Retailer Count
 - Retailer Universe %
 - Covered Retailers: Unique count of retailers visited in the month by each sales rep (Visible in the activities report for each sales rep).
+
+            Top-10 Sales_rep with the highest Coverage
+  ![covr](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/8abd9919-661a-47d8-842c-00b710450679)
 - Coverage % (Against Retailer Count)
 - Productive Retailers: Unique count of retailers sold to in the month by each sales rep (Visible in the sales report for each sales rep).
 - Productive Coverage % (Against Retailer Count)
