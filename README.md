@@ -24,7 +24,7 @@ These files were used to get all the insights regarding the performance of the t
 - Step 1 : Load and Read Dataset into Google colab (dataset is a csv file).
            
            Since am using Python for my Data Analysis, google colab or jupyter notebook are my favorite by default while analyzing my dataset.
-               
+ ![actv](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/0a270594-5fa6-44fd-95e1-b8a5cc4480dc)              
 - Step 2 : Exploratory Data Analysis (EDA)
 - Step 3 : DATA CLEANING and also Ensuring consistent naming through FEATURE ENGINEERING.
 - Step 4 : Filter activities and sales data for February 2023 only.
