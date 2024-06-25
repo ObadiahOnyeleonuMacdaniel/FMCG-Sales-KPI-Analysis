@@ -1,4 +1,4 @@
-# FMCG (Fast Moving Cosumers Goods) SALES KPI ANALYSIS
+# FMCG SALES (Fast Moving Cosumers Goods) KPI ANALYSIS
 
 This repository contains an in-depth analysis of an FMCG (Fast Moving Cosumers Goods) sales team’s performance for February 2023. 
 
@@ -160,7 +160,6 @@ A presentation telling a story about all KPI achievements by the team for the mo
 ![spx](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/075d70e0-da2c-4725-a140-3b69fcdaf112)
 
         
-        Count of Customers = COUNT(airline_passenger_satisfaction[ID])
         
 
 
