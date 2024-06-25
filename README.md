@@ -47,7 +47,7 @@ These files were used to get all the insights regarding the performance of the t
 
 
 
-## MANDATORY KPIs 
+## CALCULATING THE MANDATORY KPIs 
 - Loading the dataset    
           
                #Load and Read Dataset
@@ -57,7 +57,7 @@ These files were used to get all the insights regarding the performance of the t
                sales_report = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/EURO ATLANTIS ANALYSIS/Sales Report.csv')
 
 
-- Filter activities and sales data for February 2023
+- Filtering activities and sales data for February 2023
 
 
 - Checking the unique number of features in the sales_feb dataframe
