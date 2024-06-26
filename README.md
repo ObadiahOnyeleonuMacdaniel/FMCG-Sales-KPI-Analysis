@@ -112,6 +112,7 @@ Calls Target: Target number of unique retailers to be visited on each work day b
 Calls Actual: Total number of unique retailers visited on each work day in a month for each sales rep (Visible in the activities report for each sales rep).
 Calls %
 
+
            Top-10 Sales_rep with the highest total calls
   ![bb](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/d3f7c12b-2827-40c8-a9e2-d9ac9d1744ff)
   
@@ -120,6 +121,7 @@ Productive Calls: Total number of unique retailers sold to on each work day in a
 Productive Calls % (Against Calls Target)
 
 Productive Calls % (Against Calls Target)
+
            Top-10 Sales_rep with the highest Productive Calls
   ![spc](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/7b422359-9f00-448c-be06-8ffb1ef3369b)
 
@@ -159,92 +161,7 @@ A presentation telling a story about all KPI achievements by the team for the mo
 
 ![spx](https://github.com/ObadiahOnyeleonuMacdaniel/FMCG-Sales-KPI-Analysis/assets/156518788/075d70e0-da2c-4725-a140-3b69fcdaf112)
 
-        
-        
-
-
 
 ## INSIGHTS
 
-A single page report was created on Power BI Desktop & it was then published to Power BI Service.
 
-Following inferences can be drawn from the dashboard;
-
-### [1] Total Number of Customers = 129880
-
-   Number of satisfied Customers (Male) = 28159 (21.68 %)
-
-   Number of satisfied Customers (Female) = 28269 (21.76 %)
-
-   Number of neutral/unsatisfied customers (Male) = 35822 (27.58 %)
-
-   Number of neutral/unsatisfied customers (Female) = 37630 (28.97 %)
-
-
-           thus, higher number of customers are neutral/unsatisfied.
-           
-### [2] Average Ratings
-
-    a) Baggage Handling - 3.63/5
-    b) Check-in Service - 3.31/5
-    c) Cleanliness - 3.29/5
-    d) Ease of online booking - 2.88/5
-    e) Food & Drink - 3.21/5
-    f) In-flight Entertainment - 3.36/5
-    g) In-flight service - 3.64/5
-    h) In-flight Wifi service - 2.81/5
-    i) Leg room service - 3.37/5
-    j) On-board service - 3.38/5
-    k) Online boarding - 3.33/5
-    l) Seat comfort - 3.44/5
-    m) Departure & arrival convenience - 3.22/5
-  
-  while calculating average rating, null values have been ignored as they were not relevant for some customers. 
-  
-  These ratings will change if different visual filters will be applied.  
-  
-  ### [3] Average Delay 
-  
-      a) Average delay in arrival(minutes) - 15.09
-      b) Average delay in departure(minutes) - 14.71
-Average delay will change if different visual filters will be applied.
-
- ## [4] SOME OTHER INSIGHTS
- 
- ### Class
- 
- 1.1) 47.87 % customers travelled by Business class.
- 
- 1.2) 44.89 % customers travelled by Economy class.
- 
- 1.3) 7.25 % customers travelled by Economy plus class.
- 
-         thus, maximum customers travelled by Business class.
- 
- ### Age Group
- 
- 2.1)  21.69 % customers belong to '0-25' age group.
- 
- 2.2)  52.44 % customers belong to '25-50' age group.
- 
- 2.3)  25.57 % customers belong to '50-75' age group.
- 
- 2.4)  0.31 % customers belong to '75-100' age group.
- 
-         thus, maximum customers belong to '25-50' age group.
-         
-### Customer Type
-
-3.1) 18.31 % customers have customer type 'First time'.
-
-3.2) 81.69 % customers have customer type 'returning'.
-       
-       thus, more customers have customer type 'returning'.
-
-### Type of travel
-
-4.1) 69.06 % customers have travel type 'Business'.
-
-4.2) 30.94 % customers have travel type 'Personal'.
-
-        thus, more customers have travel type 'Business'.
